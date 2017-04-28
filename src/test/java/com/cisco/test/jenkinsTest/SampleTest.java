@@ -12,7 +12,7 @@ public class SampleTest
 {
 	@AfterMethod
 	public void afterMethod(ITestResult result) {
-	  System.out.println("method name:" + result.getMethod().getMethodName()+"result = "+(result.isSuccess()?"Pass":"Fail"));
+	  System.out.println("method name: " + result.getTestClass().getName()+":"+result.getMethod().getMethodName()+"result = "+(result.isSuccess()?"Pass":"Fail"));
 	}
 	
 	@Test
