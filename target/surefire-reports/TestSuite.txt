@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.301 sec <<< FAILURE! - in TestSuite
+failingTest(com.cisco.test.jenkinsTest.SampleTest)  Time elapsed: 0.015 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.cisco.test.jenkinsTest.SampleTest.failingTest(SampleTest.java:35)
+
+failingTest1(com.cisco.test.jenkinsTest.SampleTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.cisco.test.jenkinsTest.SampleTest.failingTest1(SampleTest.java:40)
+
+failingTest2(com.cisco.test.jenkinsTest.SampleTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.cisco.test.jenkinsTest.SampleTest.failingTest2(SampleTest.java:45)
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [AppTest]">
+  <test name="AppTest">
+    <classes>
+      <class name="com.cisco.test.jenkinsTest.SampleTest"/>
+    </classes>
+  </test> <!-- AppTest -->
+  <test name="AppTest(failed)">
+    <classes>
+      <class name="com.cisco.test.jenkinsTest.SampleTest">
+        <methods>
+          <include name="failingTest2"/>
+          <include name="afterMethod"/>
+          <include name="failingTest"/>
+          <include name="failingTest1"/>
+        </methods>
+      </class> <!-- com.cisco.test.jenkinsTest.SampleTest -->
+    </classes>
+  </test> <!-- AppTest(failed) -->
+</suite> <!-- Failed suite [AppTest] -->
