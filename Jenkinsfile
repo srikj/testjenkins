@@ -1,4 +1,4 @@
-node('remote') {
+node {
   checkout scm
   stash name: 'sources', includes: 'pom.xml,src/'
 }
@@ -7,7 +7,7 @@ def branches = [:]
 for (int i = 0; i < splits.size(); i++) {
   def index = i // fresh variable per iteration; i will be mutated
   branches["split${i}"] = {
-    node('remote') {
+    node {
       deleteDir()
       unstash 'sources'
       stage 'Test {i}'
