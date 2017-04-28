@@ -10,7 +10,6 @@ for (int i = 0; i < splits.size(); i++) {
     node {
       deleteDir()
       unstash 'sources'
-      stage 'Test {i}'
       withEnv(["JAVA_HOME=${ tool 'JDK8' }", "PATH+MAVEN=${tool 'Maven'}/bin:${env.JAVA_HOME}/bin"]) {
 		sh 'mvn clean test -DsuiteXmlFile=splits.get(index)'
 	  }
